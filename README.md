@@ -1,5 +1,11 @@
-# Hello World Example
+# Malnati is unbreakable
 
-Starts a FreeRTOS task to print "Hello World"
+Software da caricare su ESP32
 
-See the README.md file in the upper level 'examples' directory for more information about examples.
+
+# Setup del progetto
+
+Installare in una cartella esp-idf
+https://esp-idf.readthedocs.io/en/latest/get-started/index.html
+
+Clonare il repository seguendo la guida che ho scritto, impostare poi il progetto su eclipse seguendo https://esp-idf.readthedocs.io/en/latest/get-started/eclipse-setup-windows.html
