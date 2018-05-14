@@ -1,5 +1,4 @@
-hello_world_main.o: \
- E:/msys32/home/Albert/esp/esp32-chan/main/hello_world_main.c \
+main.o: E:/msys32/home/Albert/esp/esp32-chan/main/main.c \
  E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/stdio.h \
  E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/_ansi.h \
  E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/newlib.h \
@@ -121,7 +120,9 @@ hello_world_main.o: \
  E:/msys32/home/Albert/esp/esp-idf/components/log/include/esp_log.h \
  E:/msys32/home/Albert/esp/esp-idf/components/log/include/esp_log_internal.h \
  E:/msys32/home/Albert/esp/esp-idf/components/nvs_flash/include/nvs_flash.h \
- E:/msys32/home/Albert/esp/esp-idf/components/nvs_flash/include/nvs.h
+ E:/msys32/home/Albert/esp/esp-idf/components/nvs_flash/include/nvs.h \
+ E:/msys32/home/Albert/esp/esp32-chan/main/connection_wifi.h \
+ E:/msys32/home/Albert/esp/esp32-chan/main/client_tcp.h
 
 E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/stdio.h:
 
@@ -366,4 +367,8 @@ E:/msys32/home/Albert/esp/esp-idf/components/log/include/esp_log_internal.h:
 E:/msys32/home/Albert/esp/esp-idf/components/nvs_flash/include/nvs_flash.h:
 
 E:/msys32/home/Albert/esp/esp-idf/components/nvs_flash/include/nvs.h:
-/home/Albert/esp/esp32-chan/main/./hello_world_main.c:
+
+E:/msys32/home/Albert/esp/esp32-chan/main/connection_wifi.h:
+
+E:/msys32/home/Albert/esp/esp32-chan/main/client_tcp.h:
+/home/Albert/esp/esp32-chan/main/./main.c:

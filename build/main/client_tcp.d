@@ -1,5 +1,4 @@
-hello_world_main.o: \
- E:/msys32/home/Albert/esp/esp32-chan/main/hello_world_main.c \
+client_tcp.o: E:/msys32/home/Albert/esp/esp32-chan/main/client_tcp.c \
  E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/stdio.h \
  E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/_ansi.h \
  E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/newlib.h \
@@ -18,6 +17,8 @@ hello_world_main.o: \
  E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/machine/types.h \
  E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/sys/sched.h \
  E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/sys/stdio.h \
+ E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/string.h \
+ E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/sys/string.h \
  E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/stdint.h \
  E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/sys/_intsup.h \
@@ -75,11 +76,11 @@ hello_world_main.o: \
  E:/msys32/home/Albert/esp/esp-idf/components/esp32/include/rom/ets_sys.h \
  E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h \
  E:/msys32/home/Albert/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h \
+ E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/event_groups.h \
+ E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/timers.h \
  E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/task.h \
  E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/limits.h \
  E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/list.h \
- E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/event_groups.h \
- E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/timers.h \
  E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/task.h \
  E:/msys32/home/Albert/esp/esp-idf/components/esp32/include/esp_wifi.h \
  E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/queue.h \
@@ -120,8 +121,11 @@ hello_world_main.o: \
  E:/msys32/home/Albert/esp/esp-idf/components/esp32/include/esp_event_loop.h \
  E:/msys32/home/Albert/esp/esp-idf/components/log/include/esp_log.h \
  E:/msys32/home/Albert/esp/esp-idf/components/log/include/esp_log_internal.h \
- E:/msys32/home/Albert/esp/esp-idf/components/nvs_flash/include/nvs_flash.h \
- E:/msys32/home/Albert/esp/esp-idf/components/nvs_flash/include/nvs.h
+ E:/msys32/home/Albert/esp/esp-idf/components/lwip/include/lwip/lwip/netdb.h \
+ E:/msys32/home/Albert/esp/esp-idf/components/lwip/include/lwip/lwip/inet.h \
+ E:/msys32/home/Albert/esp/esp-idf/components/lwip/include/lwip/lwip/sockets.h \
+ E:/msys32/home/Albert/esp/esp-idf/components/lwip/include/lwip/lwip/err.h \
+ E:/msys32/home/Albert/esp/esp32-chan/main/client_tcp.h
 
 E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/stdio.h:
 
@@ -158,6 +162,10 @@ E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/machine/types.h:
 E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/sys/sched.h:
 
 E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/sys/stdio.h:
+
+E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/string.h:
+
+E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/sys/string.h:
 
 E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
 
@@ -273,15 +281,15 @@ E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/xtensa_ap
 
 E:/msys32/home/Albert/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h:
 
+E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/event_groups.h:
+
+E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/timers.h:
+
 E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/task.h:
 
 E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/limits.h:
 
 E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/list.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/event_groups.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/timers.h:
 
 E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/task.h:
 
@@ -363,7 +371,13 @@ E:/msys32/home/Albert/esp/esp-idf/components/log/include/esp_log.h:
 
 E:/msys32/home/Albert/esp/esp-idf/components/log/include/esp_log_internal.h:
 
-E:/msys32/home/Albert/esp/esp-idf/components/nvs_flash/include/nvs_flash.h:
+E:/msys32/home/Albert/esp/esp-idf/components/lwip/include/lwip/lwip/netdb.h:
 
-E:/msys32/home/Albert/esp/esp-idf/components/nvs_flash/include/nvs.h:
-/home/Albert/esp/esp32-chan/main/./hello_world_main.c:
+E:/msys32/home/Albert/esp/esp-idf/components/lwip/include/lwip/lwip/inet.h:
+
+E:/msys32/home/Albert/esp/esp-idf/components/lwip/include/lwip/lwip/sockets.h:
+
+E:/msys32/home/Albert/esp/esp-idf/components/lwip/include/lwip/lwip/err.h:
+
+E:/msys32/home/Albert/esp/esp32-chan/main/client_tcp.h:
+/home/Albert/esp/esp32-chan/main/./client_tcp.c:
