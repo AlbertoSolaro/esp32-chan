@@ -4,7 +4,7 @@
 #define WIFI_SSID "Vodafone-A42271042"
 #define WIFI_PASS ""
 
-void main_task(void*);
-void connection_wifi_main();
+void connection_wifi();			// Init wifi and wifi event handler
+void connection_wifi_wait();	// Wait BIT change on wifi event handler
 
 #endif

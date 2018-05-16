@@ -77,52 +77,8 @@ main.o: E:/msys32/home/Albert/esp/esp32-chan/main/main.c \
  E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/task.h \
  E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/limits.h \
  E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/list.h \
- E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/event_groups.h \
- E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/timers.h \
- E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/task.h \
- E:/msys32/home/Albert/esp/esp-idf/components/esp32/include/esp_wifi.h \
- E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/queue.h \
- E:/msys32/home/Albert/esp/esp-idf/components/esp32/include/rom/queue.h \
- E:/msys32/home/Albert/esp/esp-idf/components/esp32/include/esp_wifi_types.h \
- E:/msys32/home/Albert/esp/esp-idf/components/esp32/include/esp_interface.h \
- E:/msys32/home/Albert/esp/esp-idf/components/esp32/include/esp_wifi_crypto_types.h \
- E:/msys32/home/Albert/esp/esp-idf/components/esp32/include/esp_event.h \
- E:/msys32/home/Albert/esp/esp-idf/components/tcpip_adapter/include/tcpip_adapter.h \
- E:/msys32/home/Albert/esp/esp-idf/components/esp32/include/rom/queue.h \
- E:/msys32/home/Albert/esp/esp-idf/components/esp32/include/esp_wifi_types.h \
- E:/msys32/home/Albert/esp/esp-idf/components/lwip/include/lwip/lwip/ip_addr.h \
- E:/msys32/home/Albert/esp/esp-idf/components/lwip/include/lwip/lwip/opt.h \
- E:/msys32/home/Albert/esp/esp-idf/components/lwip/include/lwip/port/lwipopts.h \
- E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/time.h \
- E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/machine/time.h \
- E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/unistd.h \
- E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/sys/unistd.h \
- E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/sys/time.h \
- E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/sys/fcntl.h \
- E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/sys/_default_fcntl.h \
- E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/sys/stat.h \
- E:/msys32/home/Albert/esp/esp-idf/components/vfs/include/sys/ioctl.h \
- E:/msys32/home/Albert/esp/esp-idf/components/esp32/include/esp_task.h \
- E:/msys32/home/Albert/esp/esp-idf/components/lwip/include/lwip/lwip/debug.h \
- E:/msys32/home/Albert/esp/esp-idf/components/lwip/include/lwip/lwip/arch.h \
- E:/msys32/home/Albert/esp/esp-idf/components/lwip/include/lwip/port/arch/cc.h \
- E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/errno.h \
- E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/sys/errno.h \
- E:/msys32/home/Albert/esp/esp-idf/components/lwip/include/lwip/port/arch/sys_arch.h \
- E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/semphr.h \
- E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/queue.h \
- E:/msys32/home/Albert/esp/esp-idf/components/lwip/include/lwip/port/arch/vfs_lwip.h \
- E:/msys32/home/Albert/esp/esp-idf/components/lwip/include/lwip/lwip/def.h \
- E:/msys32/home/Albert/esp/esp-idf/components/lwip/include/lwip/lwip/ip4_addr.h \
- E:/msys32/home/Albert/esp/esp-idf/components/lwip/include/lwip/lwip/ip6_addr.h \
- E:/msys32/home/Albert/esp/esp-idf/components/lwip/include/lwip/apps/dhcpserver.h \
- E:/msys32/home/Albert/esp/esp-idf/components/esp32/include/esp_event_loop.h \
- E:/msys32/home/Albert/esp/esp-idf/components/log/include/esp_log.h \
- E:/msys32/home/Albert/esp/esp-idf/components/log/include/esp_log_internal.h \
- E:/msys32/home/Albert/esp/esp-idf/components/nvs_flash/include/nvs_flash.h \
- E:/msys32/home/Albert/esp/esp-idf/components/nvs_flash/include/nvs.h \
  E:/msys32/home/Albert/esp/esp32-chan/main/connection_wifi.h \
- E:/msys32/home/Albert/esp/esp32-chan/main/client_tcp.h
+ E:/msys32/home/Albert/esp/esp32-chan/main/tcp_client.h
 
 E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/stdio.h:
 
@@ -280,95 +236,7 @@ E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/limits.h:
 
 E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/list.h:
 
-E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/event_groups.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/timers.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/task.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/esp32/include/esp_wifi.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/queue.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/esp32/include/rom/queue.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/esp32/include/esp_wifi_types.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/esp32/include/esp_interface.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/esp32/include/esp_wifi_crypto_types.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/esp32/include/esp_event.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/tcpip_adapter/include/tcpip_adapter.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/esp32/include/rom/queue.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/esp32/include/esp_wifi_types.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/lwip/include/lwip/lwip/ip_addr.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/lwip/include/lwip/lwip/opt.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/lwip/include/lwip/port/lwipopts.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/time.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/machine/time.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/unistd.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/sys/unistd.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/sys/time.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/sys/fcntl.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/sys/_default_fcntl.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/sys/stat.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/vfs/include/sys/ioctl.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/esp32/include/esp_task.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/lwip/include/lwip/lwip/debug.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/lwip/include/lwip/lwip/arch.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/lwip/include/lwip/port/arch/cc.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/errno.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/sys/errno.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/lwip/include/lwip/port/arch/sys_arch.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/semphr.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/queue.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/lwip/include/lwip/port/arch/vfs_lwip.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/lwip/include/lwip/lwip/def.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/lwip/include/lwip/lwip/ip4_addr.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/lwip/include/lwip/lwip/ip6_addr.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/lwip/include/lwip/apps/dhcpserver.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/esp32/include/esp_event_loop.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/log/include/esp_log.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/log/include/esp_log_internal.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/nvs_flash/include/nvs_flash.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/nvs_flash/include/nvs.h:
-
 E:/msys32/home/Albert/esp/esp32-chan/main/connection_wifi.h:
 
-E:/msys32/home/Albert/esp/esp32-chan/main/client_tcp.h:
+E:/msys32/home/Albert/esp/esp32-chan/main/tcp_client.h:
 /home/Albert/esp/esp32-chan/main/./main.c:

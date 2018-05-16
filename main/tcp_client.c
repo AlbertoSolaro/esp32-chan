@@ -13,15 +13,16 @@
 #include "lwip/netdb.h"
 #include "lwip/sockets.h"
 
-#include "client_tcp.h"
+#include "connection_wifi.h"
+#include "tcp_client.h"
 
 // HTTP request
-static const char *REQUEST = "GET "CONFIG_RESOURCE" HTTP/1.1\n"
-	"Host: "CONFIG_WEBSITE"\n"
-	"User-Agent: ESP32\n"
-	"\n";
+static const char *REQUEST = "GET "CONFIG_RESOURCE" HTTP/1.1\r\n"
+	"Host: "CONFIG_WEBSITE"\r\n"
+	"User-Agent: ESP32\r\n"
+	"\r\n";
 
-void client_tcp_init(){
+void tcp_client(){
 	const struct addrinfo hints = {
 	  .ai_family = AF_INET,
 	  .ai_socktype = SOCK_STREAM,
@@ -30,10 +31,13 @@ void client_tcp_init(){
 	char recv_buf[100];
 
 	struct addrinfo *res;
+
+	connection_wifi_wait(); //xEventGroupWaitBits(wifi_event_group, CONNECTED_BIT, false, true, portMAX_DELAY);
+
 	// resolve the IP of the target website
 	int result = getaddrinfo(CONFIG_WEBSITE, "80", &hints, &res);
 	if((result != 0) || (res == NULL)) {
-		printf("Unable to resolve IP for target website %s\n%s\n", CONFIG_WEBSITE,REQUEST);
+		printf("Unable to resolve IP for target website %s\n%s\nre: %d\nres: %p", CONFIG_WEBSITE,REQUEST,result,res);
 		while(1) vTaskDelay(1000 / portTICK_RATE_MS);
 	}
 	printf("Target website's IP resolved\n");
@@ -80,14 +84,5 @@ void client_tcp_init(){
 	close(s);
 	printf("Socket closed\n");
 
-	while(1) {
-		vTaskDelay(1000 / portTICK_RATE_MS);
-	}
-
 }
-
-void client_tcp_start(){
-	xTaskCreate(&client_tcp_init, "client_tcp_init", 2048, NULL, 5, NULL);
-}
-
 

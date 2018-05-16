@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "freertos/event_groups.h"
@@ -7,6 +8,9 @@
 #include "esp_event_loop.h"
 #include "esp_log.h"
 #include "nvs_flash.h"
+
+#include "lwip/netdb.h"
+#include "lwip/sockets.h"
 
 #include "connection_wifi.h"
 
@@ -39,13 +43,17 @@ static esp_err_t event_handler(void *ctx, system_event_t *event)
 	return ESP_OK;
 }
 
+void connection_wifi_wait(){
+	xEventGroupWaitBits(wifi_event_group, CONNECTED_BIT, false, true, portMAX_DELAY);
+	return;
+}
 
 // Main task
 void main_task(void *pvParameter)
 {
 	// wait for connection
 	printf("Main task: waiting for connection to the wifi network... ");
-	xEventGroupWaitBits(wifi_event_group, CONNECTED_BIT, false, true, portMAX_DELAY);
+	connection_wifi_wait(); //xEventGroupWaitBits(wifi_event_group, CONNECTED_BIT, false, true, portMAX_DELAY);
 	printf("connected!\n");
 
 	// print the local IP address
@@ -55,9 +63,12 @@ void main_task(void *pvParameter)
 	printf("Subnet mask: %s\n", ip4addr_ntoa(&ip_info.netmask));
 	printf("Gateway:     %s\n", ip4addr_ntoa(&ip_info.gw));
 
+	while(1) {
+		vTaskDelay(1000 / portTICK_RATE_MS);
+	}
 }
 
-void connection_wifi_main(){
+void connection_wifi(){
 
 	// disable the default wifi logging
 	esp_log_level_set("wifi", ESP_LOG_NONE);

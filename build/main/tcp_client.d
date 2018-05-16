@@ -1,5 +1,4 @@
-connection_wifi.o: \
- E:/msys32/home/Albert/esp/esp32-chan/main/connection_wifi.c \
+tcp_client.o: E:/msys32/home/Albert/esp/esp32-chan/main/tcp_client.c \
  E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/stdio.h \
  E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/_ansi.h \
  E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/newlib.h \
@@ -77,11 +76,11 @@ connection_wifi.o: \
  E:/msys32/home/Albert/esp/esp-idf/components/esp32/include/rom/ets_sys.h \
  E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h \
  E:/msys32/home/Albert/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h \
+ E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/event_groups.h \
+ E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/timers.h \
  E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/task.h \
  E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/limits.h \
  E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/list.h \
- E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/event_groups.h \
- E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/timers.h \
  E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/task.h \
  E:/msys32/home/Albert/esp/esp-idf/components/esp32/include/esp_wifi.h \
  E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/queue.h \
@@ -122,13 +121,12 @@ connection_wifi.o: \
  E:/msys32/home/Albert/esp/esp-idf/components/esp32/include/esp_event_loop.h \
  E:/msys32/home/Albert/esp/esp-idf/components/log/include/esp_log.h \
  E:/msys32/home/Albert/esp/esp-idf/components/log/include/esp_log_internal.h \
- E:/msys32/home/Albert/esp/esp-idf/components/nvs_flash/include/nvs_flash.h \
- E:/msys32/home/Albert/esp/esp-idf/components/nvs_flash/include/nvs.h \
  E:/msys32/home/Albert/esp/esp-idf/components/lwip/include/lwip/lwip/netdb.h \
  E:/msys32/home/Albert/esp/esp-idf/components/lwip/include/lwip/lwip/inet.h \
  E:/msys32/home/Albert/esp/esp-idf/components/lwip/include/lwip/lwip/sockets.h \
  E:/msys32/home/Albert/esp/esp-idf/components/lwip/include/lwip/lwip/err.h \
- E:/msys32/home/Albert/esp/esp32-chan/main/connection_wifi.h
+ E:/msys32/home/Albert/esp/esp32-chan/main/connection_wifi.h \
+ E:/msys32/home/Albert/esp/esp32-chan/main/tcp_client.h
 
 E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/stdio.h:
 
@@ -284,15 +282,15 @@ E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/xtensa_ap
 
 E:/msys32/home/Albert/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h:
 
+E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/event_groups.h:
+
+E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/timers.h:
+
 E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/task.h:
 
 E:/msys32/home/Albert/esp/esp-idf/components/newlib/include/limits.h:
 
 E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/list.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/event_groups.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/timers.h:
 
 E:/msys32/home/Albert/esp/esp-idf/components/freertos/include/freertos/task.h:
 
@@ -374,10 +372,6 @@ E:/msys32/home/Albert/esp/esp-idf/components/log/include/esp_log.h:
 
 E:/msys32/home/Albert/esp/esp-idf/components/log/include/esp_log_internal.h:
 
-E:/msys32/home/Albert/esp/esp-idf/components/nvs_flash/include/nvs_flash.h:
-
-E:/msys32/home/Albert/esp/esp-idf/components/nvs_flash/include/nvs.h:
-
 E:/msys32/home/Albert/esp/esp-idf/components/lwip/include/lwip/lwip/netdb.h:
 
 E:/msys32/home/Albert/esp/esp-idf/components/lwip/include/lwip/lwip/inet.h:
@@ -387,4 +381,6 @@ E:/msys32/home/Albert/esp/esp-idf/components/lwip/include/lwip/lwip/sockets.h:
 E:/msys32/home/Albert/esp/esp-idf/components/lwip/include/lwip/lwip/err.h:
 
 E:/msys32/home/Albert/esp/esp32-chan/main/connection_wifi.h:
-/home/Albert/esp/esp32-chan/main/./connection_wifi.c:
+
+E:/msys32/home/Albert/esp/esp32-chan/main/tcp_client.h:
+/home/Albert/esp/esp32-chan/main/./tcp_client.c:
