@@ -1,0 +1,4 @@
+## Ignore ESP temporary files and build results
+
+# Build results
+build/
